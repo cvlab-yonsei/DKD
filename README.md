@@ -1,6 +1,6 @@
-# Decomposed Knowledge Distillation for Class-incremental Semantic Segmentation
+# Decomposed Knowledge Distillation for Class-Incremental Semantic Segmentation
 
-This is an official implementation of the paper "Decomposed Knowledge Distillation for Class-incremental Semantic Segmentation", accepted to NeurIPS 2022.
+This is an official implementation of the paper "Decomposed Knowledge Distillation for Class-Incremental Semantic Segmentation", accepted to NeurIPS 2022.
 
 For more information, please checkout the project site [[website](https://cvlab.yonsei.ac.kr/projects/DKD/)] and our paper [[arXiv]()].
 
