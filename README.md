@@ -5,7 +5,7 @@ This is an official implementation of the paper "Decomposed Knowledge Distillati
 For more information, please checkout the project site [[website](https://cvlab.yonsei.ac.kr/projects/DKD/)] and our paper [[arXiv](http://arxiv.org/abs/2210.05941)].
 
 ## Pre-requisites
-This repository has been tests with the following libraries:
+This repository has been tested with the following libraries:
 * Python (3.6)
 * Pytorch (1.8.1)
 
