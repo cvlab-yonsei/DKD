@@ -27,7 +27,7 @@ We use augmented 10,582 training samples and 1,449 validation samples for PASCAL
 ```
 
 #### ADE20K
-The structure of data path should be organized as follows:
+We use 20,210 training samples and 2,000 validation samples for ADE20K. You can download the dataset in [here](http://sceneparsing.csail.mit.edu/). The structure of data path should be organized as follows:
 ```bash
 └── /dataset/ADEChallengeData2016
     ├── annotations
