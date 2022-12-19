@@ -258,14 +258,6 @@ class Trainer_base(BaseTrainer):
                     log.update({met.__name__ + '_harmonic': f"{met()['harmonic']:.2f}"})
                 if 'overall' in met().keys():
                     log.update({met.__name__ + '_overall': f"{met()['overall']:.2f}"})
-                # if 'by_class' in met().keys():
-                #     by_class_str = '\n'
-                #     for i in range(len(met()['by_class'])):
-                #         if i in self.evaluator_test.new_classes_idx:
-                #             by_class_str = by_class_str + f"{i:2d} *{ADE[i]} {met()['by_class'][i]:.2f}\n"
-                #         else:
-                #             by_class_str = by_class_str + f"{i:2d} *{ADE[i]} {met()['by_class'][i]:.2f}\n"
-                    # log.update({met.__name__ + '_by_class': by_class_str})
         return log
 
 
