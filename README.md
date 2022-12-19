@@ -2,7 +2,7 @@
 
 This is an official implementation of the paper "Decomposed Knowledge Distillation for Class-Incremental Semantic Segmentation", accepted to NeurIPS 2022.
 
-For more information, please checkout the project site [[website](https://cvlab.yonsei.ac.kr/projects/DKD/)] and our paper [[arXiv](http://arxiv.org/abs/2210.05941)].
+For more information, please checkout the project site [[website](https://cvlab.yonsei.ac.kr/projects/DKD/)] and our paper [[arXiv](http://arxiv.org/abs/2210.05941) / [OpenReview](https://openreview.net/forum?id=0SgKq4ZC9r)].
 
 ## Pre-requisites
 This repository has been tested with the following libraries:
