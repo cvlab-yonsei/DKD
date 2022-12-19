@@ -165,8 +165,7 @@ class Pad(object):
         assert isinstance(fill, (numbers.Number, str))
         assert padding_mode in ['constant', 'edge', 'reflect', 'symmetric']
         if isinstance(padding, collections.Sequence) and len(padding) not in [2, 4]:
-            raise ValueError("Padding must be an int or a 2, or 4 element tuple, not a " + 
-                             "{} element tuple".format(len(padding)))
+            raise ValueError("Padding must be an int or a 2, or 4 element tuple, not a " + "{} element tuple".format(len(padding)))
 
         self.padding = padding
         self.fill = fill
