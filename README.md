@@ -63,18 +63,6 @@ python train_voc.py -c configs/config_voc.json \
 --task_name ${TASKNAME} --task_setting ${TASKSETTING} --task_step 1 --lr ${LR} --bs ${BS} --freeze_bn --mem_size ${MEMORY_SIZE}
 ```
 
-<!-- All numbers are obtained by averaging results over five runs. 
-|  Method   | VOC 19-1 (2 steps)<br>$\text{hIoU}$ / $\text{mIoU}_{\text{all}}$ | VOC 15-5 (2 steps)<br>$\text{hIoU}$ / $\text{mIoU}_{\text{all}}$ | VOC 15-1 (6 steps)<br>$\text{hIoU}$ / $\text{mIoU}_{\text{all}}$ | VOC 10-1 (11 steps)<br>$\text{hIoU}$ / $\text{mIoU}_{\text{all}}$ | VOC 5-3 (6 steps)<br>$\text{hIoU}$ / $\text{mIoU}_{\text{all}}$ |
-| :-        | :------------: | :--------------:   | :---------------: | :----------------: | :----------------: |
-| MiB       | 33.62   / 67.80   | 59.72   / 69.00   | 19.50   / 29.70   | 12.66   / 29.70   | 48.77   / 46.71   |
-| SDR       | 44.30   / 67.40   | 61.97   / 69.90   | 29.31   / 39.20   | -                 | -                 |
-| PLOP      | 49.94   / 73.54   | 61.46   / 70.09   | 31.88   / 54.64   | 57.66   / 29.70   | 18.28   / 18.68   |
-| SSUL      | 42.96   / 75.44   | 60.96   / 71.22   | 49.67   / 67.61   | **57.66** / 29.70 | 59.63   / 56.89   |
-| **DKD**   | **54.03 / 76.03** | **66.98 / 73.93** | **55.21 / 69.67** | 56.84 / **60.44** | **60.49 / 58.10** |
-| SSUL-M    | 60.71   / 76.49   | 65.20   / 73.02   | 60.30   / 71.37   | 61.93   / 64.12   | 60.93   / 58.37   |
-| **DKD-M** | **66.27 / 77.01** | **68.63 / 74.72** | **62.91 / 72.53** | **64.19 / 65.77** | **64.63 / 62.94** | -->
-
-
 #### ADE20K
 ```Shell
 # An example srcipt for 50-50 overlapped setting of ADE20K
@@ -103,17 +91,6 @@ python train_ade.py -c configs/config_ade.json \
 -d ${GPU} --multiprocessing_distributed --save_dir ${SAVEDIR} --name ${NAME} \
 --task_name ${TASKNAME} --task_setting ${TASKSETTING} --task_step 2 --lr ${LR} --bs ${BS} --freeze_bn --mem_size ${MEMORY_SIZE}
 ```
-
-<!-- All numbers are obtained by averaging results over five runs.
-|  Method     | ADE 100-50 (2 steps)<br>$\text{hIoU}$ / $\text{mIoU}_{\text{all}}$ | ADE 100-10 (6 steps)<br>$\text{hIoU}$ / $\text{mIoU}_{\text{all}}$ | ADE 50-50 (3 steps)<br>$\text{hIoU}$ / $\text{mIoU}_{\text{all}}$ |
-| :--------:  | :-----------------: | :--------------:   | :----------------: |
-| MiB       | 24.12 / 32.79     | 17.23 / 29.24     | 28.76 / 29.31     |
-| PLOP      | 21.97 / 32.94     | 20.37 / 31.59     | 29.36 / 30.40     |
-| SSUL      | 25.09 / 33.58     | 25.57 / 33.10     | 28.45 / 29.56     |
-| **DKD**   | **29.74 / 35.95** | **26.55 / 34.26** | **34.17 / 33.90** |
-| SSUL-M    | 24.88 / 34.37     | 25.01 / 34.46     | 28.53 / 29.77     |
-| **DKD-M** | **29.79 / 35.98** | **27.14 / 34.58** | **34.19 / 33.92** | -->
-
 
 ### Testing
 #### PASCAL VOC 2012
