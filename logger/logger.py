@@ -33,22 +33,20 @@ class Logger:
     # Print from rank0 process only
     def info(self, msg):
         if self.rank == 0:
-            # logging.info(msg)
             self.logger.info(msg)
 
     def debug(self, msg):
         if self.rank == 0 and self.debug_flag:
-            # logging.info(msg)
             self.logger.info(msg)
 
     def error(self, msg):
-        # logging.error(msg)
         if self.rank == 0:
             self.logger.error(msg)
 
     def warning(self, msg):
         if self.rank == 0:
             self.logger.warning(msg)
+
 
 def setup_logging(save_dir, log_config='logger/logger_config.json', default_level=logging.INFO):
     """
