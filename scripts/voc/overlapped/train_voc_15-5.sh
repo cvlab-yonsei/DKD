@@ -5,7 +5,7 @@ GPU=0,1,2,3
 BS=8  # Total 32
 SAVEDIR='saved_voc'
 
-TASKSETTING='disjoint'  # or 'disjoint'
+TASKSETTING='overlap'  # or 'disjoint'
 TASKNAME='15-5'
 EPOCH=60
 INIT_LR=0.001
