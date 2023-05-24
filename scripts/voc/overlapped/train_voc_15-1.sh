@@ -39,6 +39,3 @@ python train_voc.py -c configs/config_voc.json \
 --task_name ${TASKNAME} --task_setting ${TASKSETTING} --task_step 5 --lr ${LR} --bs ${BS} --freeze_bn --mem_size ${MEMORY_SIZE}
 
 python eval_voc.py -d 0 --test -r ${SAVEDIR}/models/${TASKSETTING}_${TASKNAME}_${NAME}/step_5/checkpoint-epoch${EPOCH}.pth
-
-
-python train_voc.py --test -d 0 -r pretrained/overlap_19-1_DKD/step_1/checkpoint-epoch60.pth
